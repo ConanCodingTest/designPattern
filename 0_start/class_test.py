@@ -12,7 +12,7 @@ class Person:
     def get_name(self):
         """取得姓名"""
         return self.__name
-        
+
     def get_age(self):
         """取得年齡"""
         return self._age
@@ -39,8 +39,8 @@ class Teacher(Person):
     
     def show_info(self):
         """顯示教師資訊，包含標題"""
-        super().show_info()
         print(f"Title: {self.__title}")
+        super().show_info()
 
 def test_person():
     """測試 Person 和 Teacher 類別"""
@@ -53,4 +53,5 @@ def test_person():
 
 if __name__ == "__main__":
     test_person()
+    print()
     print("Testing complete.")
