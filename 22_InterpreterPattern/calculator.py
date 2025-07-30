@@ -133,7 +133,7 @@ def getMapValue(expStr):
 
     return newExp, expressionMap
 
-def testCalculator():
+if __name__ == "__main__":
     # 獲取運算式
     expStr = input("請輸入運算式：")
     # 獲取各參數的鍵值對
@@ -142,4 +142,3 @@ def testCalculator():
     result = calculator.run(expressionMap)
     print("運算結果為:" + expStr + " = " + str(result))
 
-testCalculator()
